@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abu Muhsin Online Quran Institute</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    :root{
+        --green:#0f5132;
+        --green-dark:#08351f;
+        --gold:#d4af37;
+        --light:#f8f9fa;
+        --text:#1f2937;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+        font-family:'Poppins',sans-serif;
+        color:var(--text);
+        background:#ffffff;
+        line-height:1.6;
+    }
+    .urdu{
+        font-family:'Noto Nastaliq Urdu', serif;
+        direction:rtl;
+    }
+    header{
+        background:linear-gradient(rgba(8,53,31,.85), rgba(8,53,31,.85)),
+        url('https://images.unsplash.com/photo-1542816417-0983670d8f4b?auto=format&fit=crop&w=1600&q=80') center/cover;
+        color:white;
+        padding:80px 20px;
+        text-align:center;
+    }
+    header h1{
+        font-size:3rem;
+        margin-bottom:10px;
+        color:var(--gold);
+    }
+    header p{
+        max-width:700px;
+        margin:0 auto 20px;
+        font-size:1.1rem;
+    }
+    .btn{
+        display:inline-block;
+        background:var(--gold);
+        color:#111;
+        padding:12px 22px;
+        border-radius:50px;
+        text-decoration:none;
+        font-weight:600;
+        margin-top:10px;
+    }
+    nav{
+        background:var(--green);
+        padding:12px 20px;
+        position:sticky;
+        top:0;
+        z-index:1000;
+    }
+    nav ul{
+        display:flex;
+        justify-content:center;
+        gap:20px;
+        list-style:none;
+        flex-wrap:wrap;
+    }
+    nav a{
+        color:white;
+        text-decoration:none;
+        font-weight:500;
+    }
+    section{
+        padding:70px 20px;
+    }
+    .container{
+        max-width:1100px;
+        margin:auto;
+    }
+    .section-title{
+        text-align:center;
+        margin-bottom:40px;
+    }
+    .section-title h2{
+        color:var(--green);
+        font-size:2rem;
+        margin-bottom:10px;
+    }
+    .cards{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+        gap:20px;
+    }
+    .card{
+        background:white;
+        border:1px solid #e5e7eb;
+        border-radius:16px;
+        padding:25px;
+        text-align:center;
+        box-shadow:0 4px 12px rgba(0,0,0,.06);
+    }
+    .card h3{
+        color:var(--green);
+        margin-bottom:10px;
+    }
+    .features{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+        gap:20px;
+    }
+    .feature{
+        background:#f9fafb;
+        padding:20px;
+        border-radius:14px;
+        border-left:5px solid var(--gold);
+    }
+    .teacher{
+        display:grid;
+        grid-template-columns:1fr 2fr;
+        gap:30px;
+        align-items:center;
+    }
+    .teacher img{
+        width:100%;
+        border-radius:20px;
+    }
+    form{
+        display:grid;
+        gap:15px;
+        max-width:600px;
+        margin:auto;
+    }
+    input, textarea{
+        padding:14px;
+        border:1px solid #d1d5db;
+        border-radius:10px;
+        font-size:1rem;
+    }
+    button{
+        background:var(--green);
+        color:white;
+        border:none;
+        padding:14px;
+        border-radius:10px;
+        font-size:1rem;
+        cursor:pointer;
+    }
+    footer{
+        background:var(--green-dark);
+        color:white;
+        text-align:center;
+        padding:30px 20px;
+    }
+    .whatsapp{
+        position:fixed;
+        bottom:20px;
+        right:20px;
+        background:#25D366;
+        color:white;
+        width:60px;
+        height:60px;
+        border-radius:50%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-size:30px;
+        text-decoration:none;
+        box-shadow:0 4px 10px rgba(0,0,0,.2);
+    }
+    @media(max-width:768px){
+        header h1{font-size:2.2rem}
+        .teacher{grid-template-columns:1fr}
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Abu Muhsin Online Quran Institute</h1>
+    <p class="urdu">ابو محسن آن لائن قرآن انسٹیٹیوٹ</p>
+    <p>Learn the Quran with qualified teachers from the comfort of your home. Classes available worldwide for children and adults.</p>
+    <a href="https://wa.me/923258000998" class="btn">📱 WhatsApp Now</a>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#teacher">Teacher</a></li>
+        <li><a href="#admission">Admission</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="courses">
+    <div class="container">
+        <div class="section-title">
+            <h2>📖 Our Courses</h2>
+            <p>Comprehensive Islamic education for all ages</p>
+        </div>
+        <div class="cards">
+            <div class="card"><h3>Noorani Qaida</h3><p>Learn Quranic reading from basics.</p></div>
+            <div class="card"><h3>Nazra Quran</h3><p>Correct Quran recitation with fluency.</p></div>
+            <div class="card"><h3>Hifz-ul-Quran</h3><p>Memorization program with guidance.</p></div>
+            <div class="card"><h3>Tajweed</h3><p>Rules of Quranic pronunciation.</p></div>
+            <div class="card"><h3>Basic Hadith</h3><p>Introduction to authentic Hadith.</p></div>
+            <div class="card"><h3>Basic Fiqh</h3><p>Essential Islamic rulings and worship.</p></div>
+            <div class="card"><h3>Salah Masail</h3><p>Important prayer issues and rulings.</p></div>
+            <div class="card"><h3>Kids & Adults</h3><p>Separate attention for every student.</p></div>
+        </div>
+    </div>
+</section>
+
+<section id="why" style="background:#f8fafc;">
+    <div class="container">
+        <div class="section-title">
+            <h2>🌟 Why Choose Us?</h2>
+            <p>Professional, flexible and student-focused learning</p>
+        </div>
+        <div class="features">
+            <div class="feature"><h3>🌍 Worldwide Classes</h3><p>Students from any country can join.</p></div>
+            <div class="feature"><h3>👨‍🏫 One-to-One Teaching</h3><p>Personal attention for every learner.</p></div>
+            <div class="feature"><h3>⏰ Flexible Timings</h3><p>Choose a schedule that suits you.</p></div>
+            <div class="feature"><h3>📈 Progress Tracking</h3><p>Regular revision and improvement.</p></div>
+        </div>
+    </div>
+</section>
+
+<section id="teacher">
+    <div class="container teacher">
+        <div>
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80" alt="Teacher">
+        </div>
+        <div>
+            <h2 style="color:var(--green);margin-bottom:15px;">👨‍🏫 Meet Your Teacher</h2>
+            <h3 style="color:var(--gold);margin-bottom:10px;">Hafiz Jalaluddin</h3>
+            <p>Qualified Quran teacher dedicated to teaching the Quran with proper Tajweed, understanding, and Islamic manners. Classes are conducted online in a friendly and respectful environment for both children and adults.</p>
+            <p style="margin-top:15px;"><strong>📱 WhatsApp:</strong> +92 325 8000998</p>
+        </div>
+    </div>
+</section>
+
+<section id="admission" style="background:#f8fafc;">
+    <div class="container">
+        <div class="section-title">
+            <h2>📝 Online Admission</h2>
+            <p>Fill out the form and we will contact you</p>
+        </div>
+        <form>
+            <input type="text" placeholder="Student Name" required>
+            <input type="number" placeholder="Age" required>
+            <input type="text" placeholder="Country" required>
+            <input type="tel" placeholder="WhatsApp Number" required>
+            <textarea rows="5" placeholder="Write your message..."></textarea>
+            <button type="submit">Submit Admission</button>
+        </form>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <div class="section-title">
+            <h2>📞 Contact Us</h2>
+            <p>We are here to help you start your Quran journey</p>
+        </div>
+        <div style="text-align:center;">
+            <p><strong>📱 WhatsApp:</strong> +92 325 8000998</p>
+            <p><strong>🌍 Institute:</strong> Abu Muhsin Online Quran Institute</p>
+            <p><strong>📖 Classes:</strong> Available Worldwide</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <h3 style="color:var(--gold);margin-bottom:10px;">Abu Muhsin Online Quran Institute</h3>
+    <p class="urdu" style="margin-bottom:10px;">قرآن سیکھیں • اسلام پر عمل کریں • حکمت پھیلائیں</p>
+    <p>© 2026 Abu Muhsin Online Quran Institute. All Rights Reserved.</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/923258000998" target="_blank">💬</a>
+
+</body>
+</html>
